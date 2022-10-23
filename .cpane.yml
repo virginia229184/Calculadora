@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/asierzer/public_html/
+    - /bin/cp Calculadora/src/menu/menu.java $DEPLOYPATH
