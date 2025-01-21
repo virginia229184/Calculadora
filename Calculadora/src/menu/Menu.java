@@ -1,8 +1,19 @@
 package menu;
 import java.util.Scanner;
+
 public class Menu {
+	
+	
+	
+	
     private static Scanner teclado = new Scanner(System.in);
     
+	/**
+	 * metodo para pedir  dos numeros enteros  al usuario
+	 * 
+	
+	 * @return numero: devuelve los 2 numeros enteros guardados en el array
+	 */
     public int[] pedirNumeros(){
         int[] ret = new int[2];
         System.out.print ("Operando 1: ");
@@ -11,6 +22,17 @@ public class Menu {
         ret [1] = teclado.nextInt();
         return ret;
     }
+    
+  
+  
+    
+    /**
+     * metodo para mostrar un menÃº de opciones para realizar operaciones (+,-,*,/,%)
+     * 
+	 * 
+	
+	 * @return numero: devuelve la opcion elegida por el usuaruio
+	 */
     
     public String menuOpciones() {
         String ret = "";
@@ -24,11 +46,19 @@ public class Menu {
                 return ret;
     }
     
+    /**
+     * Pregunta al usuario si desea continuar utilizando la calculadora.
+     *  
+     *         
+     * 
+     * @return Un valor booleano que indica si el usuario quiere continuar
+     */
+    
     public boolean repetir(){
         boolean ret = false;
         String respuesta;
         do {
-            System.out.print ("¿Desea continuar trabajando con la calculadora? [s / n]");
+            System.out.print ("ï¿½Desea continuar trabajando con la calculadora? [s / n]");
             respuesta = teclado.next();
         } while (!((respuesta.equalsIgnoreCase("s")) || (respuesta.equalsIgnoreCase("n"))
                     ));
