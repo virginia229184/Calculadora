@@ -3,7 +3,9 @@ package principal;
 import menu.Menu;
 import operaciones.Operaciones;
 
-
+/**
+ * interfaz que proporciona operaciones
+ */
 public class Calculadora{
 	
 	

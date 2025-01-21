@@ -1,5 +1,9 @@
 package menu;
 import java.util.Scanner;
+/**
+ * esta clase se encarga de presentar las opciones disponibles al usuario
+ */
+
 
 public class Menu {
 	
